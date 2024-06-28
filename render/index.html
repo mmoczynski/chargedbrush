@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>ChargedBrush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  File
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a id="export-activation" class="dropdown-item" href="#">Export</a></li>
+                  <li><a id="import-url-modal" class="dropdown-item" href="#">Import from URL</a></li>
+                  <li><a id="preferences-menu-activation" class="dropdown-item" href="#">Preferences</a></li>
+                  <li><a id="exit-menu-option" class="dropdown-item" href="#">Exit</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tools
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a id="invert-colors-opt" class="dropdown-item" href="#">Invert Colors</a></li>
+                  <li><a id="exit-menu-option" class="dropdown-item" href="#">Extract Channel</a></li>
+                </ul>
+              </li>
+
+              <form>
+                <label>Tool Size</label>
+                <input type="number" id="pen-size-ctrl">
+                <span><input id="brush-color" class="" type="color"></input></span>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script type="module" src="js/index.js"></script>
+
+  </body>
+</html>
